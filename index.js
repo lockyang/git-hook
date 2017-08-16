@@ -1,11 +1,11 @@
 #!/usr/bin/env node
-'use strict';
 
 const co = require('co');
 const inquirer = require('inquirer');
 const path = require('path')
 
 const commandCommit = require('./command_commit.js');
+const commandTag = require('./command_tag.js');
 
 const main = () => {
   let schema = [{
@@ -32,6 +32,9 @@ const main = () => {
     choices: [{
       'name': '提交代码到当前分支',
       'value': 'commit'
+    }, {
+      'name': '更新tag到master',
+      'value': 'tag'
     }]
   }];
 
@@ -41,6 +44,10 @@ const main = () => {
       case 'commit':
         // commit Command
         commandCommit();
+        break;
+      case 'tag':
+        // Tag Command
+        commandTag();
         break;
     }
   })

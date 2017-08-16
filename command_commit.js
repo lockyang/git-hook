@@ -1,12 +1,10 @@
-'use strict';
-
 const inquirer = require('inquirer');
 const colors = require('colors');
 const thunkify = require('thunkify');
 const co = require('co');
 const git = require('./lib/git');
 
-const promptMessage = `${colors.red('git-commit-push')}: `;
+const promptMessage = `${colors.red('gitPush')}: `;
 
 const emojiList = {
   Bugfix: '🐛 [bug] ',
@@ -86,9 +84,8 @@ function *submit () {
 function *push () {
 
   const result = yield inquirer.prompt(schema);
-
   if ( result.confirm ) {
-    yield thunkify(git.gitPush);
+    yield thunkify(git.gitPush)();
     console.log('>>> commit 成功推送到远端'.green);
   }
 
