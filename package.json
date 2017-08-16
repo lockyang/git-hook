@@ -1,10 +1,10 @@
 {
   "name": "easygit",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "git-hook",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test"
+    "run": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,8 @@
     "colors": "^1.1.2",
     "inquirer": "^3.2.1",
     "moment": "^2.18.1",
+    "semver": "^5.4.1",
     "thunkify": "^2.1.2"
-  }
+  },
+  "dependencies": {}
 }
