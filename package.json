@@ -1,0 +1,30 @@
+{
+  "name": "easygit",
+  "version": "0.0.1",
+  "description": "git-hook",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lockyang/git-hook.git"
+  },
+  "keywords": [
+    "node",
+    "git"
+  ],
+  "author": "YangGaoshang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lockyang/git-hook/issues"
+  },
+  "homepage": "https://github.com/lockyang/git-hook#readme",
+  "devDependencies": {
+    "co": "^4.6.0",
+    "colors": "^1.1.2",
+    "inquirer": "^3.2.1",
+    "moment": "^2.18.1",
+    "thunkify": "^2.1.2"
+  }
+}
