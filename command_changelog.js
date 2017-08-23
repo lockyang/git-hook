@@ -18,9 +18,10 @@ const sortTag = (a, b) =>
   semver.gt(a, b);
 
 const lastSemverTag = (tags) => {
+  console.log(tags);
   let tag = tags.filter(isSemver).sort(sortTag)[0];
   if (!tag) {
-    console.log('tag需符合semver规则');
+    console.log('tag需符合semver规则'.red);
     process.exit();
   }
   return tag

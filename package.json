@@ -1,6 +1,6 @@
 {
   "name": "easygit",
-  "version": "0.1.0+17w34a",
+  "version": "0.0.2",
   "description": "git-hook",
   "main": "index.js",
   "scripts": {
@@ -27,5 +27,6 @@
     "moment": "^2.18.1",
     "semver": "^5.4.1",
     "thunkify": "^2.1.2"
-  }
+  },
+  "dependencies": {}
 }
