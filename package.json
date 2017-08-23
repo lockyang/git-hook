@@ -23,13 +23,13 @@
     "url": "https://github.com/lockyang/git-hook/issues"
   },
   "homepage": "https://github.com/lockyang/git-hook#readme",
-  "devDependencies": {
+  "devDependencies": {},
+  "dependencies": {
     "co": "^4.6.0",
     "colors": "^1.1.2",
-    "inquirer": "^3.2.1",
+    "inquirer": "^3.2.2",
     "moment": "^2.18.1",
     "semver": "^5.4.1",
     "thunkify": "^2.1.2"
-  },
-  "dependencies": {}
+  }
 }
